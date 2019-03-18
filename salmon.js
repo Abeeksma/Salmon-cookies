@@ -17,13 +17,13 @@ var storePike = {
     }
   },
   calccookiesEachHour: function() {
-    for(var i = 0; i < customersEachHour.length; i++) {
+    for(var i = 0; i < this.customersEachHour.length; i++) {
       this.cookiesEachHour.push(Math.ceil(this.customersEachHour[i] * this.averageCookiesPerSale));
     }
   },
   calcTotalCookies: function() {
-    for(var i = 0; i < cookiesEachHour.length; i++) {
-      this.totalCookiesDaily += cookiesEachHour[i];
+    for(var i = 0; i < this.cookiesEachHour.length; i++) {
+      this.totalCookiesDaily += this.cookiesEachHour[i];
     }
   },
 };
