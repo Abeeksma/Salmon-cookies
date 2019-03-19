@@ -4,13 +4,14 @@ console.log('sale.js loaded');
 
 for(var i = 0; i < places.length; i++) {
   var currentPlace = places[i];
-  console.log(currentPlace.nameOfStore);
+  currentPlace.calccustomersEachHour();
+  currentPlace.calccookiesEachHour();
+  currentPlace.calcTotalCookies();
   var newListName = document.createElement('ul');
   var newText = document.createTextNode(currentPlace.nameOfStore);
   newListName.appendChild(newText);
 
   for(var j = 0; j < hours.length; j++) {
-    console.log(currentPlace.cookiesEachHour[j]);
     var newListItem = document.createElement('li');
     var newLineText = document.createTextNode(`${hours[j]}: cookies: ${currentPlace.cookiesEachHour[j]}`);
     newListItem.appendChild(newLineText);
