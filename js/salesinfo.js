@@ -158,14 +158,9 @@ alki.calcTotalCookies();
 
 var places = [storePike, seatleCenter, airport, capitolHill, alki];
 
-// var places = [storePike, airport, seatleCenter, capitolHill, alki];
-
-
-
 
 //to fix my decimal numbers if i need to... eg 9.2 is actually 9.199999999987459874252 fuck all)
 // function roundMyFloats(float) {
 //   var decimalNumber = Math.round(float * 10)/10;
 //   return decimalNumber;
 // }
-
