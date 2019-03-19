@@ -6,9 +6,17 @@ body {
     color: rgb(16, 104, 52)
 }
 
+nav {
+    margin: 5px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+
+}
+
 a {
     color: rgb(16, 104, 52)
 }
+
 footer {
     color:rgb(16, 104, 52);
     padding: 10px;
@@ -16,4 +24,11 @@ footer {
     bottom: 0;
     right: 0;
     width: 100px;
+}
+
+td {
+    border: 1px solid;
+    align-content: center;
+    padding: 5px;
+
 }
