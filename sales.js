@@ -12,7 +12,7 @@ for(var i = 0; i < places.length; i++) {
   for(var j = 0; j < hours.length; j++) {
     console.log(currentPlace.cookiesEachHour[j]);
     var newListItem = document.createElement('li');
-    var newLineText = document.createTextNode(`${hours[j]}: cookies ${currentPlace.cookiesEachHour[j]}`);
+    var newLineText = document.createTextNode(`${hours[j]}: cookies: ${currentPlace.cookiesEachHour[j]}`);
     newListItem.appendChild(newLineText);
     newListName.appendChild(newListItem);
   }
