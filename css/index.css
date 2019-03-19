@@ -1,5 +1,4 @@
 
-
 body {
     background-color: rgba(243, 168, 220);
     font-family: 'Lato', sans-serif;
@@ -23,7 +22,23 @@ footer {
     position:fixed;
     bottom: 0;
     right: 0;
-    width: 100px;
+    width: 75px;
+    font-size: 10px;
+}
+
+table {
+    border: 3px solid;
+    height: 600px;
+    background-color: rgb(154, 85, 219);
+    color: rgb(37, 247, 107);
+}
+
+th {
+    border: 1px solid;
+}
+
+tr {
+    border: 1px solid;
 }
 
 td {
