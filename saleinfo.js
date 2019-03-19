@@ -1,6 +1,7 @@
 
 
 var hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm',];
+var places = ['1st and Pike', 'SeaTac Airport', 'Seatle Center', 'Capitol Hill', 'Alki'];
 
 var storePike = {
   nameOfStore: '1st and Pike',
@@ -27,3 +28,4 @@ var storePike = {
     }
   },
 };
+
