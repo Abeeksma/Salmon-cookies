@@ -1,0 +1,19 @@
+
+
+body {
+    background-color: rgba(243, 168, 220);
+    font-family: 'Lato', sans-serif;
+    color: rgb(16, 104, 52)
+}
+
+a {
+    color: rgb(16, 104, 52)
+}
+footer {
+    color:rgb(16, 104, 52)
+    padding: 10px;
+    position:fixed;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+}
