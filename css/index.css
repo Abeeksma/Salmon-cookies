@@ -29,16 +29,18 @@ footer {
 table {
     border: 3px solid;
     height: 600px;
-    background-color: rgb(154, 85, 219);
+    background-color: rgb(172, 120, 221);
     color: rgb(37, 247, 107);
 }
 
 th {
     border: 1px solid;
+    
 }
 
 tr {
     border: 1px solid;
+    text-align: center;
 }
 
 td {
