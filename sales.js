@@ -3,16 +3,17 @@
 console.log('sale.js loaded');
 
 for(var i = 0; i < places.length; i++) {
-  console.log(places[i].nameOfStore)
-  var newHeader = document.createElement('h2');
-  var newText = document.createTextNode(places[i].nameOfStore);
-  newHeader.appendChild(newText);
+  var currentPlace = places[i];
+  console.log(currentPlace.nameOfStore)
+  var newListName = document.createElement('ul');
+  var newText = document.createTextNode(currentPlace.nameOfStore);
+  newListName.appendChild(newText);
 
   var whereIStickIt = document.getElementsByTagName('body')[0];
+  whereIStickIt.appendChild(newListName);
 
-  whereIStickIt.appendChild(newHeader);
-
+  for(var j = 0; j < hours.length; j++) {
+    console.log(currentPlace.cookiesEachHour[j]);
+    
+  }
 }
-
-
-

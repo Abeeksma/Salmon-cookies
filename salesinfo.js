@@ -128,7 +128,7 @@ capitolHill.calcTotalCookies();
 //**************************************************** alki (THE FIFTH STORE)*********************************************/
 
 var alki = {
-  nameOfStore: 'SeaTac Airport',
+  nameOfStore: 'Alki',
   minCustomer: 2,
   maxCustomer: 16,
   averageCookiesPerSale: 4.6,
