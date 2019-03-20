@@ -34,7 +34,6 @@ Store.prototype.calcTotalCookies = function() {
 };
 
 Store.prototype.render = function() {
-
   this.calccustomersEachHour();
   this.calccookiesEachHour();
   this.calcTotalCookies();

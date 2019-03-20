@@ -49,3 +49,8 @@ td {
     padding: 5px;
 
 }
+
+form fieldset legend {
+    font-size: 36px;
+    text-decoration: underline;
+}
