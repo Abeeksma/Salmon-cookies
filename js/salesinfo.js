@@ -91,9 +91,38 @@ for(var i = 0; i < places.length; i++) {
 }
 
 
+//////////////////////// ADD NEW STORES FROM FORM MADNESS ////////////////////////////
+var fuckingform = document.getElementById('fuckingform');
+
+function AnotherStore (store, minimum, maximum, average) {
+  this.store = store;
+  this.minimum = minimum;
+  this.maximum = maximum;
+  this.average = average;
+
+}
+
+function addStoreFromForm (event) {
+  event.preventDefault();
+  var store = event.target.store.value;
+  var minimum = parseInt(event.target.minimum.value);
+  var maximum = parseInt(event.target.maximum.value);
+  var average = parseFloat(event.target.average.value);
+  var newStore = new Store(store, minimum, maximum, average);
+  places.push(newStore);
+  newStore.render();
+  fuckingform.reset();
+}
+
+fuckingform.addEventListener('submit', addStoreFromForm);
+
+
+//var addNewStore = new AnotherStore(store, minimum, maximum, average);  ///////????up to line 83ish??////
+
+
 //to fix my decimal numbers if i need to... eg 9.2 is actually 9.199999999987459874252 fuck all)
 
 // function roundMyFloats(float) {
 //   var decimalNumber = Math.round(float * 10)/10;
 //   return decimalNumber;
-// }
+//}

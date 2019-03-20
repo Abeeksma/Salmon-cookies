@@ -12,21 +12,27 @@
         <a href="index.html">Home</a>
         <a href="sales.html">Sales</a>
     </nav>
-    <script src="js/salesinfo.js" ></script>
-    <form>
+    <form id="fuckingform">
         <fieldset>
             <legend>New Fake Stores!</legend>
+            <div>
               <lable for="store">Name of Potential New Cookie Hustler</lable>
-              <input type="text" id="store"></input>
+              <input type="text" id="store" name="store"></input>
+            </div>
               <lable for="minimum">What is your minimum clientel?</lable>
-              <input type="number" id="minimum"></input>
+              <input type="number" id="minimum" name="minimum"></input>
+            <div>
               <lable for="maximum">What is your maximum clientel?</lable>
-              <input type="number" id="maximum"></input>
+              <input type="number" id="maximum" name="maximum"></input>
+            </div>
               <lable for="average">On average how many fish do you sling?</lable>
-              <input type="number" id="average"></input>
+              <input type="float" id="average" name="average"></input>
+            <div>
               <button type="submit">Commit your lies!</button>
+            </div>  
         </fieldset>
     </form>
     <footer>Eat the fish!</footer>
+    <script src="js/salesinfo.js" ></script>
 </body>
 </html>

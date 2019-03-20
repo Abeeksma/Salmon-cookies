@@ -28,7 +28,7 @@ footer {
 
 table {
     border: 3px solid;
-    height: 600px;
+    width: 75%;
     background-color: rgb(172, 120, 221);
     color: rgb(37, 247, 107);
 }
