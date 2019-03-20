@@ -38,8 +38,11 @@ Store.prototype.render = function() {
   this.calccookiesEachHour();
   this.calcTotalCookies();
   var newListName = document.createElement('tr');
+  var nameInTd = document.createElement('td');
   var newText = document.createTextNode(this.nameOfStore);
-  newListName.appendChild(newText);
+  nameInTd.appendChild(newText);
+  newListName.appendChild(nameInTd);
+
 
   for(var j = 0; j < hours.length; j++) {
     var newListItem = document.createElement('td');
@@ -92,6 +95,7 @@ for(var i = 0; i < places.length; i++) {
 
 
 //////////////////////// ADD NEW STORES FROM FORM MADNESS ////////////////////////////
+
 var fuckingform = document.getElementById('fuckingform');
 
 function AnotherStore (store, minimum, maximum, average) {
@@ -99,7 +103,6 @@ function AnotherStore (store, minimum, maximum, average) {
   this.minimum = minimum;
   this.maximum = maximum;
   this.average = average;
-
 }
 
 function addStoreFromForm (event) {
@@ -115,10 +118,6 @@ function addStoreFromForm (event) {
 }
 
 fuckingform.addEventListener('submit', addStoreFromForm);
-
-
-//var addNewStore = new AnotherStore(store, minimum, maximum, average);  ///////????up to line 83ish??////
-
 
 //to fix my decimal numbers if i need to... eg 9.2 is actually 9.199999999987459874252 fuck all)
 
