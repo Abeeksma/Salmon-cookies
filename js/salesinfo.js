@@ -69,6 +69,7 @@ function TotalRow(){
 
 TotalRow.prototype.totalCookiesEachHour = function() {
   var hourlyCookies = ['TOTAL'];
+  var runningtotal = 0;
   for(var i =0; i < hours.length; i++) {
     var cookiesNao = 0;
     for(var j = 0; j < places.length; j++ ) {
@@ -76,8 +77,12 @@ TotalRow.prototype.totalCookiesEachHour = function() {
     } 
     hourlyCookies.push(cookiesNao);
   }
+  for(var z = 1; z < hourlyCookies.length; z++) {
+    runningtotal += hourlyCookies[z];
+  }
+  hourlyCookies.push(`Grand Total: ${runningtotal}`);
   this.rowData = hourlyCookies;
-}; 
+};
 
 TotalRow.prototype.render = function() {
   this.totalCookiesEachHour();
