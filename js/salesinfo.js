@@ -147,6 +147,26 @@ function addStoreFromForm (event) {
   var minimum = parseInt(event.target.minimum.value);
   var maximum = parseInt(event.target.maximum.value);
   var average = parseFloat(event.target.average.value);
+  if (!store || store === '') {
+    alert('Store cannot be blank');
+    return false;
+  }
+  if (isNaN(minimum)) {
+    alert('Minimum must be a Number');
+    return false;
+  }
+  if (isNaN(maximum)) {
+    alert('Maximum must be a Number');
+    return false;
+  }
+  if (isNaN(average)) {
+    alert('Average must be a Number');
+    return false;
+  }
+  if (minimum > maximum) {
+    alert('Minimum MUST be smaller than Maximum');
+    return false;
+  }
   var newStore = new Store(store, minimum, maximum, average);
   places.push(newStore);
   var findbottom = document.getElementsByClassName('bottom')[0];
