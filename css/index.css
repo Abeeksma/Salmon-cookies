@@ -28,7 +28,7 @@ footer {
 
 table {
     border: 3px solid;
-    height: 600px;
+    width: 75%;
     background-color: rgb(172, 120, 221);
     color: rgb(37, 247, 107);
 }
@@ -48,4 +48,9 @@ td {
     align-content: center;
     padding: 5px;
 
+}
+
+form fieldset legend {
+    font-size: 36px;
+    text-decoration: underline;
 }
