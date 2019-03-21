@@ -82,6 +82,7 @@ TotalRow.prototype.totalCookiesEachHour = function() {
 TotalRow.prototype.render = function() {
   this.totalCookiesEachHour();
   var finalRow = document.createElement('tr');
+  finalRow.classList.add('bottom');
   
   this.rowData.forEach(function(item){
     var finalRowData = document.createElement('td');
@@ -148,7 +149,10 @@ function addStoreFromForm (event) {
   var average = parseFloat(event.target.average.value);
   var newStore = new Store(store, minimum, maximum, average);
   places.push(newStore);
+  var findbottom = document.getElementsByClassName('bottom')[0];
+  findbottom.parentNode.removeChild(findbottom);
   newStore.render();
+  totalRow.render();
   fuckingform.reset();
 }
 
