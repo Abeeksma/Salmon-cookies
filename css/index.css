@@ -1,56 +1,36 @@
-
-body {
-    background-color: rgba(243, 168, 220);
-    font-family: 'Lato', sans-serif;
-    color: rgb(16, 104, 52)
+body,
+html,
+p {
+    margin: 0;
+    padding: 0;
 }
 
 nav {
-    margin: 5px;
-    padding-top: 5px;
-    padding-bottom: 15px;
-
+    background-color: #232020;
+    padding: 30px 15px;
 }
 
-a {
-    color: rgb(16, 104, 52)
+nav a{
+    color: #71f7e7;
+}
+
+body {
+    background-color:rgb(209, 209, 209);
+}
+
+header,
+section,
+footer {
+    padding: 60px 30px;
+}
+
+header {
+    background-image: url(/Salmon-cookies/images/salmon.png);
+    height: 80vh;
 }
 
 footer {
-    color:rgb(16, 104, 52);
-    padding: 10px;
-    position:fixed;
-    bottom: 0;
-    right: 0;
-    width: 75px;
-    font-size: 10px;
-}
-
-table {
-    border: 3px solid;
-    width: 75%;
-    background-color: rgb(172, 120, 221);
-    color: rgb(37, 247, 107);
-}
-
-th {
-    border: 1px solid;
-    
-}
-
-tr {
-    border: 1px solid;
-    text-align: center;
-}
-
-td {
-    border: 1px solid;
-    align-content: center;
-    padding: 5px;
-
-}
-
-form fieldset legend {
-    font-size: 36px;
-    text-decoration: underline;
+    background-color: #232020;
+    text-align: right;   
+    color: #71f7e7
 }

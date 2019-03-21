@@ -38,7 +38,6 @@ Store.prototype.render = function() {
   this.calccustomersEachHour();
   this.calccookiesEachHour();
   this.calcTotalCookies();
-  //this.totalCookiesEachHour();
   var newListName = document.createElement('tr');
   var nameInTd = document.createElement('td');
   var newText = document.createTextNode(this.nameOfStore);
@@ -97,12 +96,12 @@ TotalRow.prototype.render = function() {
   });
 
   var whereIStickIt = document.getElementsByTagName('table')[0];
-  whereIStickIt.appendChild(finalRow)
+  whereIStickIt.appendChild(finalRow);
 
 };
 
 function createTable() {
-  var table = document.createElement('table');
+  var table = document.getElementsByTagName('table')[0];
   var tableRow = document.createElement('tr');
   var locationHeadings = document.createElement('th');
   locationHeadings.textContent = 'Location';
@@ -110,11 +109,11 @@ function createTable() {
 
   for(var i = 0; i <hours.length; i++) {
     var tableHeading = document.createElement('th');
-    tableHeading.textContent =hours[i];
+    tableHeading.textContent = hours[i];
     tableRow.appendChild(tableHeading);
   }
   table.appendChild(tableRow);
-  document.body.appendChild(table);
+
 }
 
 createTable();
