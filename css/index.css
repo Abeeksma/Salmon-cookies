@@ -161,8 +161,43 @@ footer {
     float: right;
     padding: 15px;
 }
+
+.table-section {
+    width: 100%;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    background-color: #161925;
+    color: #71f7e7;
+    font-size: 18px;
+
+}
+
+table {
+    border: 1px solid #777777;
+}
+th {
+    border: 1px solid #777777;
+}
+tr {
+    border: 1px solid #777777;
+}
+td {
+    border: 1px solid #777777;
+}
+
+.new-store {
+    width: 60%;
+    margin: auto;
+}
+
+legend {
+    font-size: 36px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
 .newstore form {
-    max-width: 1000px;
+    max-width: 100%;
     margin: 90px auto;
 }
 
