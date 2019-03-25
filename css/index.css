@@ -70,6 +70,8 @@ main {
     margin-top: 5%;
     border-radius: 20px;
     padding: 2%;
+    border: 1px solid #777777;
+    box-shadow: 21px 18px 47px 10px rgba(0,0,0,0.71);
 }
 .top-box p {
     color: #777777;
@@ -84,6 +86,7 @@ main {
     margin: auto;
     color: #83E800;
     overflow: hidden;
+    font-size: 24px;
 }
 
 .left-box {
@@ -95,6 +98,11 @@ main {
     background-color: #777777;
     padding-bottom: 100%;
     margin-bottom: -100%;
+    border: 1px solid #71f7e7;
+}
+
+.left-box span {
+    color: #71f7e7;
 }
 
 .top-corner-fish {
@@ -104,6 +112,10 @@ main {
 
 .family-photo {
     width: 100%;
+}
+
+.left-box h2 {
+    color: #83E800;
 }
 
 .left-box div {
@@ -118,7 +130,6 @@ main {
 .right-box h2 {
     text-align: center;
     color: #71f7e7;
-    font-size: 36px;
 }
 
 .right-box {
@@ -130,6 +141,7 @@ main {
     background-color: #777777;
     padding-bottom: 100%;
     margin-bottom: -100%; 
+    border: 1px solid #71f7e7;
 }
 
 .right-box img {
@@ -175,6 +187,7 @@ footer {
 
 table {
     border: 1px solid #777777;
+    box-shadow: 21px 18px 47px 10px rgba(0,0,0,0.71);
 }
 th {
     border: 1px solid #777777;
